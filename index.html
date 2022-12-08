@@ -230,16 +230,16 @@
     function exportcsv() {
         let finalVal = '';
 
-        var timestanps = []
+        var timestamps = []
         for (let i = 0; i < localStorage.length; i++) {
             let localstragekey = localStorage.key(i)
-            timestanps.push(localstragekey)
+            timestamps.push(localstragekey)
         }
-        timestanps.sort()
+        timestamps.sort()
 
 
-        for (let i = 0; i < timestanps.length; i++) {
-            let localstragekey = timestanps(i)
+        for (let i = 0; i < timestamps.length; i++) {
+            let localstragekey = timestamps(i)
             let d_alpha = "";
             let d_beta = "";
             let d_gamma = "";
